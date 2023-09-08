@@ -238,6 +238,12 @@ h1{
 	flex-direction: column;
 }
 
+footer .nav-links{
+	align-items: center;
+	justify-content: center;
+	margin-left: 0;
+}
+
 .navigation-footer a{
 	color: white;
 }
