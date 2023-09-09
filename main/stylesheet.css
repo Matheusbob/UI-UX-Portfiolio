@@ -1,259 +1,264 @@
-body{
-	padding: 0;
+:root{
+	--oreo: #515151;
+	--vanilla: #FFFFFF;
+	--cream: #ECE2D0;
+	--strawberry: #E56399;
+	--mint: #58C1A2;
+	--cookies: #D3A588;
+	--chocolate: #7A6563;
+
+	--mainwidth: 744px;
+
+	--mainfont: fredoka;
+	--logosize: 2em;
+	--h1size: 4em;
+	--h2size: 3em;
+	--textsize: 1.5em;
+}
+
+*{
 	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 header{
-	text-align: center;
+	width: 100%;
 	border-style: solid;
 	border-width: 0 0 2px 0;
-	border-color:#515151;
+	border-color: var(--oreo);
 	position: fixed;
-	top: 0;
-	width: 100%;
-	background: white;
-}
-
-header a{
-	font-family: fredoka;
-	color: #515151;
-	font-size: 1.5em;
-}
-
-ul{
-	padding: 0;
-	margin:0;
+	background: var(--vanilla);
 }
 
 a{
 	text-decoration: none;
 }
 
-footer{
-	background: #58C1A2 ;
+nav li{
+	display: inline-block;
 }
 
-p{
-	font-family: fredoka;
-	font-size: 1.5em;
+nav li a{
+	display: inline-block;
+	font-size: var(--textsize);
+	color: var(--oreo);
+	padding: 16px;
 }
 
-h1{
-	font-family: fredoka;
-	font-size: 3em;
-	font-weight: normal;
+nav.nav-top li a:hover{
+	color: var(--mint);
+}
+
+body{
+	background: var(--vanilla);
+	font-family: var(--mainfont);
 }
 
 .primary-button{
-	display: inline-block;
 	border-radius: 16px;
-	background: #58C1A2;
-	border: none;
-	padding: 8px 16px;
-	font-size: 2em;
-	font-family: fredoka;
 	color: white;
+	background: var(--mint);
+	padding: 16px 32px 16px 32px;
+	font-size: 2em;
 }
 
-.primary-button:hover{
-	background: #3FA687;
+/* 										Related to Header 										*/
+
+.logo{
+	font-size: var(--logosize);
 }
 
-.navbar-div{
-	display: flex;
+.nav-links{
+	align-content: center;
+	align-items: center;
+}
+
+.nav-top{
+	width: var(--mainwidth);
 	margin-left: auto;
 	margin-right: auto;
-/*	justify-content: center;*/
-	align-items: center;
-	width: 600px;
-
 }
 
-.navigation{
+.nav-links{
 	display: flex;
-	list-style: none;
+	justify-content: space-between;
+}
+	
+/* 										Related to Header 										*/
+
+/*										Related to Dropdown 									*/
+
+.dropdown-menu{
+	position: absolute;
+	box-shadow: 0 0 2px var(--oreo);
+	background: var(--vanilla);
+	display: none;
 }
 
-.nav-links a{
-	margin: 8px 16px;
-	padding: 8px 16px;
-	text-decoration: none;
-}
-
-.navigation a:hover{
-	color: #58C1A2;
-}
-
-.logo{
-	font-size: 2em;
-	margin-left: 0;
-	margin-right: 0;
-	margin: 0px 16px;
-	padding: 8px 16px;
-}
-
-.logo{
-	margin-left: 0;
-	margin-right: 0;
-}
-
-.nav-links {
+.dropdown-selector{
 	display: flex;
-	flex-direction: row;
-	align-items: center;
-	margin-left: 50px;
+	align-content: center;
+	justify-content: center;
 }
 
-.nav-links a{
-	margin-left: 0;
-	margin-right: 0;
+.dropdown-menu a{
+	display: block;
+	color: var(--oreo);
 }
+
+.dropdown:hover .dropdown-menu{
+	display: block;
+}
+
+/*										Related to Dropdown 									*/
+
+/* 										Related to Hero 										*/
 
 .hero{
-	display: block;
-	margin-right: auto;
+	width: var(--mainwidth);
 	margin-left: auto;
-	width: 600px;
-	margin-top: 300px;
-	margin-bottom: 300px;
+	margin-right: auto;
+	padding: 300px 0 300px 0;
+}
+
+.hero h1{
+	font-size: var(--h1size);
+	font-weight: normal;
+	text-align: center;
+	color: var(--mint);
+	margin-bottom: 32px;
+}
+
+.hero p{
+	font-size: var(--textsize);
+	color: var(--oreo);
+	margin-bottom: 16px;
 }
 
 .hero-bottom{
-	margin-top: 64px;
-	margin-bottom: 100px;
-}
-
-.hero-bottom .test{
-	display: flex;
-	margin-left: auto;
-	margin-right: auto;
-	align-items: center;
-	justify-content: center;
+	padding-top: 100px;
+	padding-bottom: 100px;
 }
 
 .hero-bottom p{
 	text-align: center;
+	margin-bottom: 16px;
 }
 
-.hero h1{
-	font-family: fredoka;
-	color: #58C1A2;
-	font-size: 4em;
-	text-align: center;
+#button-align{
+	display: flex;
+	margin-left: auto;
+	margin-right: auto;
+	align-items: center;
+	justify-content: center;
 }
 
-.hero p{
-	color: #515151;
-}
+/* 										Related to Hero 										*/
+
+/*										Related to Projects										*/
 
 .project{
-	padding: 32px;
-}
-
-.project a:hover{
-	color: #515151;
-}
-
-.project1-wrapper{
-	background: #E56399;
-}
-
-.project2-wrapper{
-	background: #ECE2D0;
-}
-
-.project3-wrapper{
-	background: #7A6563;
-}
-
-.project1{
-	display: flex;
-	margin-right: auto;
+	padding: 64px 0 64px 0;
 	margin-left: auto;
-	width: 600px;
-}
-
-.project3{
-	display: flex;
 	margin-right: auto;
-	margin-left: auto;
-	width: 600px;
-}
-
-.project2{
 	display: flex;
-	flex-direction: column;
-	margin-right: auto;
-	margin-left: auto;
-	width: 600px;
+	width: var(--mainwidth);
 }
 
-.project-img-hor{
+.project-wrapper1{
+	background: var(--strawberry);
+}
+
+.project-wrapper2{
+	background: var(--cream);
+}
+
+.project-wrapper3{
+	background: var(--mint);
+}
+
+.project-img1{
 	width: 250px;
 }
 
-.project-img-vert{
-	width: 600px;
+.project div h2{
+	font-size: var(--h2size);
 }
 
-.project-text{
+.project div p{
+	font-size: var(--textsize);
+}
+
+.project div a{
+	font-size: var(--textsize);
+}
+
+.project-wrapper1 .project{
+	color: var(--vanilla);
+}
+
+.project a{
+	text-decoration: underline;
+}
+
+.project-wrapper1 .project a{
+	color: var(--vanilla);
+}
+
+.project-wrapper2 .project a{
+	color: var(--chocolate);
+}
+
+.project-wrapper2 .project{
+	flex-direction: column;
+	color: var(--chocolate);
+}
+
+.project-wrapper3 .project{
+	color: var(--vanilla);
+}
+
+.project-wrapper3 .project a{
+	color: var(--vanilla);
+}
+
+.project h2{
+	margin-bottom: 32px;
+}
+
+.project p{
+	margin-bottom: 16px;
+}
+
+.project-wrapper2 .project h2{
+	margin-top: 32px;
+}
+
+.project-wrapper1 .project .project-text{
 	margin-left: 32px;
 }
 
-.project-text{
-	color: white;
-}
 
-.project-text2{
-	margin-left: 0;
-	color: #7A6563;
-}
+/*											Related to Projects										*/
 
-.project-text3{
-	color: #ECE2D0;
-}
+/*											Related to Footer										*/
 
-.project-text a{
-	text-decoration: none;
-	font-weight: bold;
-	color: white;
-}
-
-.project-text2 a{
-	color: #7A6563;
-}
-
-
-.project-text3 a{
-	color: #ECE2D0;
-}
-
-.footer-div{
-	display:flex;
-	margin-right: auto;
-	margin-left: auto;
-	justify-content: center;
+footer{
+	width: 100%;
+	background: var(--mint);
+	height: 200px;
+	display: flex;
 	align-items: center;
-	width: 600px;
+	justify-content: center;
+}
+
+footer nav ul a{
+	color: var(--vanilla);
+}
+
+footer nav .nav-links{
+	justify-content: center;
 	flex-direction: column;
 }
-
-footer .nav-links{
-	align-items: center;
-	justify-content: center;
-	margin-left: 0;
-}
-
-.navigation-footer a{
-	color: white;
-}
-
-.footer-div h1{
-	color: white;
-}
-
-
-.navigation-footer a:hover{
-	background: none;
-	color: #515151;
-}
+/*											Related to Footer										*/

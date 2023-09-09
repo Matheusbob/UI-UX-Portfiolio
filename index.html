@@ -4,46 +4,52 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="main/stylesheet.css">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka">
-	<title></title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+	<title>Mattbob</title>
 </head>
 <body>
 
+	<!-- 									Header of Page 											-->
+
 	<header>
 		
-		<nav>
+		<nav class="navigation nav-top">
 			
-			<div class="navbar-div">
-				<ul class="navigation">			
-					<a class="logo" href="index.html"><li>Matheus Roberto</li></a>
-					<!-- <a  href=""><li>Home</li></a> -->
-					<div class="nav-links">
-						<a href="main/about.html"><li>About</li></a>
-						<a href=""><li>Contact</li></a>
-					</div>
-				</ul>
-			</div>
+			<ul class="nav-links">
+				<div> 
+					<li class="logo"><a href="">Mattbob</a></li>
+				</div>
+
+				<div class="links">
+					<li><a href="">Projects</a></li>
+					<li><a href="">About</a></li>
+					<li><a href="">Contact</a></li>
+					<li class="dropdown">
+						<a class="dropdown-selector" href="#">Language <span class="material-symbols-outlined">arrow_drop_down</span></a>
+						<div class="dropdown-menu">
+							<a href="">English</a>
+							<a href="">Portuguese</a>
+						</div>
+					</li>
+				</div>
+			</ul>
 
 		</nav>
 
 	</header>
 
-	<!-- end of header -->
+	<!-- 									Header of Page 											-->
 
+	<!-- 									Body of Page 											-->
 
-
-
-
-
-
-
-
-
+	
 
 	<main>
-		
+
+		<!-- 									Hero												-->
+
 		<section class="hero">
-			
+
 			<div>
 				<h1>Hello There!</h1>
 			</div>
@@ -52,74 +58,72 @@
 				<p>I’m Matheus, a UI/UX Designer based in Fortaleza, Brazil. I have experience in mobile game UI, website design and mobile app design.</p>
 				<p>Please, have a look at some of my projects :)</p>
 			</div>
-
+			
 		</section>
 
-		<!-- end of hero -->
-		<!-- start of project 1 -->
+		<!-- 									Hero												-->
 
-		<section class="project project1-wrapper">
+		<!-- 									Projects											-->
+		
+		<section class="project-wrapper1">
 
-			<div class="project1">
-			
-				<div class="">
-					<img class="project-img-hor" src="imgs/logicpic.png">
+			<div class="project">
+
+				<div>
+					<img class="project-img1" src="imgs/logicpic.png">
 				</div>
 
 				<div class="project-text">
-					<h1>Logic Pic</h1>
-					<p>The main project i have worked on during my time at Space Bit Games.</p>
-					<a href=""><p>Learn More Here</p></a>
+					<h2>Logic Pic</h2>
+					<p>The main project that i have worked on during my time at Space Bit Games. </p>
+					<a href="">Learn More</a>
 				</div>
 
 			</div>
 
 		</section>
 
-		<!-- end of project 1 -->
-		<!-- start of project 2 -->
-
-		<section class="project project2-wrapper">
-
-			<div class="project2">
+		<section class="project-wrapper2">
 			
-				<div class="">
-					<img class="project-img-vert" src="imgs/website.png">
+			<div class="project">
+
+				<div>
+					<img class="project-img2" src="imgs/website.png">
 				</div>
 
-				<div class="project-text project-text2">
-					<h1>Luiz Gastão's Website</h1>
-					<p>Website designed for the brazillian Congressman and FeComércio-CE President Luiz Gastão.</p>
-					<a href=""><p>Learn More Here</p></a>
+				<div class="project-text">
+					<h2>Luiz Gastão’s Website</h2>
+					<p>Website designed for the brazillian Congressman and FeComércio-CE President Luiz Gastão</p>
+					<a href="">Learn More</a>
 				</div>
 
 			</div>
 
 		</section>
 
-		<!-- end of project 2 -->
-		<!-- start of project 3 -->
-
-		<section class="project project3-wrapper">
-
-			<div class="project3">
+		<section class="project-wrapper3">
 			
-				<div class="">
-					<img class="project-img-hor" src="imgs/maodetinta.png">
-				</div>
+			<div class="project">
 
-				<div class="project-text project-text3">
-					<h1>Mão de Tinta</h1>
+				<div class="project-text">
+					<h2>Mão de Tinta</h2>
 					<p>A Case Study for an ecommerce mobile app for paint and paint acessories.</p>
-					<a href=""><p>Learn More Here</p></a>
+					<a href="">Learn More</a>
 				</div>
+
+				<div>
+					<img class="project-img3" src="imgs/maodetinta.png">
+				</div>
+
+				
 
 			</div>
 
 		</section>
 
-		<!-- end of project 3 -->
-		<!-- start of hero bottom -->
+		<!-- 									Projects											-->
+
+		<!-- 									CTA													-->
 
 		<section class="hero hero-bottom">
 			
@@ -131,43 +135,40 @@
 				<p>Learn more about me in the About page ;)</p>
 			</div>
 
-			<div class="test">
+			<div id="button-align">
 				<a class="primary-button" href="">About</a>
 			</div>
 
 		</section>
 
-		<!-- End of hero bottom -->
+
+		<!-- 									CTA													-->
+
 
 	</main>
 
+	<!-- 									Body of Page											 -->
 
-
-
-
-
-
-
-
-
-
-	
+	<!-- 									Footer of Page											 -->
 
 	<footer>
-		<div class="footer-div">
-			<div>
-				<h1>Matheus Roberto</h1>
-			</div>
+		
+		<nav class="navigation">
+			<ul class="nav-links">
+				<div>
+					<a class="logo" href="">Mattbob</a>
+				</div>
+				<div>
+					<li><a href="">Twitter</a></li>
+					<li><a href="">LinkedIn</a></li>
+					<li><a href="">Behance</a></li>
+				</div>
+			</ul>
+		</nav>
 
-			<div class="nav-links">
-				<ul class="navigation navigation-footer">
-					<a href=""><li><p>Twitter</p></li></a>
-					<a href=""><li><p>LinkedIn</p></li></a>
-					<a href=""><li><p>Behance</p></li></a>
-				</ul>
-		</div>
-		</div>
 	</footer>
+
+	<!-- 									Footer of Page											 -->
 
 </body>
 </html>
