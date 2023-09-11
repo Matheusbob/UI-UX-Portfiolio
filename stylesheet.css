@@ -8,6 +8,7 @@
 	--chocolate: #7A6563;
 
 	--mainwidth: 744px;
+	--mobilewidth: 200px;
 
 	--mainfont: fredoka;
 	--logosize: 2em;
@@ -76,6 +77,7 @@ body{
 
 .nav-top{
 	width: var(--mainwidth);
+	display: flex;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -289,3 +291,93 @@ footer nav .nav-links{
 }
 
 /*											Related to About										*/
+
+/*											Related to Mobile										*/
+
+.checkbtn{
+	display: none;
+}
+
+#check{
+	display: none;
+}
+
+
+/*											Related to Mobile										*/
+
+/*											Media Query												*/
+
+@media (max-width: 450px) {
+
+	.hero{
+		width: 80%;
+		padding: 150px 0 70px 0;
+	}
+
+	.hero h1{
+		font-size: 2.5em;
+	}
+
+	.hero p{
+		font-size: 1em;
+	}
+
+	.project{
+		width: var(--mobilewidth);
+		flex-direction: column;
+	}
+
+	.project div h2{
+		width: 100%;
+		font-size: 2.5em;
+	}
+
+	.project-img1{
+		width: 200px;
+	}
+
+}
+
+@media (max-width: 858px){
+
+	.nav-top{
+		justify-content: space-between;
+		width: 100%;
+	}
+
+    .checkbtn{
+        display: block;
+        line-height: 92px;
+        margin-right: 32px;
+        cursor: poi;
+    }
+
+    .nav-links{
+        position: fixed;
+        width: 100%;
+        background-color: var(--mint);
+        left: -100%;
+        top: 92px;
+        text-align: center;
+        justify-content: center;
+        transition: all .5s;
+    }
+
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+
+    }
+
+    nav ul li a{
+        font-size: var(--textsize);
+    }
+
+    #check:checked ~ ul{
+        left:0;     
+    }
+}
+
+/*											Media Query												*/
+
