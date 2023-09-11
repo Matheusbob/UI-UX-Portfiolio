@@ -345,6 +345,10 @@ footer nav .nav-links{
 		width: 100%;
 	}
 
+	header{
+		max-width: 100vw;
+	}
+
     .checkbtn{
         display: block;
         line-height: 92px;
@@ -354,9 +358,9 @@ footer nav .nav-links{
 
     .nav-links{
         position: fixed;
-        width: 100%;
         background-color: var(--mint);
         left: -100%;
+        width: 100vw;
         top: 92px;
         text-align: center;
         justify-content: center;
