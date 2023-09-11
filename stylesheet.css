@@ -336,6 +336,14 @@ footer nav .nav-links{
 		width: 200px;
 	}
 
+	.project-img2{
+		width: 200px;
+	}
+
+	.project-img3{
+		width: 200px;
+	}
+
 }
 
 @media (max-width: 858px){
