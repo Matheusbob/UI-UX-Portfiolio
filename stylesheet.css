@@ -17,6 +17,8 @@
 	--textsize: 1.5em;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap');
+
 *{
 	margin: 0;
 	padding: 0;
@@ -241,6 +243,10 @@ body{
 	margin-left: 32px;
 }
 
+.project-wrapper3 .project .project-text{
+	margin-left: 32px;
+}
+
 
 /*											Related to Projects										*/
 
@@ -323,7 +329,7 @@ footer nav .nav-links{
 	}
 
 	.project{
-		width: var(--mobilewidth);
+		width: 80vw;
 		flex-direction: column;
 	}
 
@@ -333,15 +339,31 @@ footer nav .nav-links{
 	}
 
 	.project-img1{
-		width: 200px;
+		width: 80vw;
 	}
 
 	.project-img2{
-		width: 200px;
+		width: 80vw;
 	}
 
 	.project-img3{
-		width: 200px;
+		width: 80vw;
+	}
+
+	.project-wrapper1 .project .project-text{
+		margin-left: 0;
+	}
+
+	.project-wrapper3 .project .project-text{
+		margin-left: 0;
+	}
+
+	.project-wrapper1 .project .project-text{
+		margin-top: 32px;
+	}
+
+	.project-wrapper3 .project .project-text{
+		margin-top: 32px;
 	}
 
 }
@@ -353,15 +375,12 @@ footer nav .nav-links{
 		width: 100%;
 	}
 
-	header{
-		max-width: 100vw;
-	}
-
     .checkbtn{
         display: block;
-        line-height: 92px;
+		margin-top: auto;
+		margin-bottom: auto;
         margin-right: 32px;
-        cursor: poi;
+        cursor: pointer;
     }
 
     .nav-links{
@@ -384,6 +403,11 @@ footer nav .nav-links{
 
     nav ul li a{
         font-size: var(--textsize);
+        color: var(--vanilla);
+    }
+
+    nav ul li a:hover{
+    	color: var(--oreo);
     }
 
     #check:checked ~ ul{
